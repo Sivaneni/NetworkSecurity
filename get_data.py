@@ -63,5 +63,5 @@ if __name__ == "__main__":
     records=networkobj.csv_tojson_convertor(file_path)
     noofrecords=networkobj.pushing_data_to_mongodb(records,Database,collection)
     print(noofrecords)
-    print(records)
+    #print(records)
         
