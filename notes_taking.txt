@@ -2,3 +2,80 @@ Yes, both BentoML and MLflow offer model registry capabilities, but they serve s
 
 BentoML: Primarily focuses on building, packaging, and deploying machine learning models. It includes a model store for managing models, making it easier to serve and deploy them in production environments1.
 MLflow: Provides a comprehensive model registry that includes model versioning, lineage, and lifecycle management. It allows you to track experiments, register models, and manage their deployment stages (e.g., staging, production)2.
+
+
+
+This data appears to be related to a phishing website detection system. Each feature represents a characteristic of a URL that can indicate whether it is likely to be a phishing site. Here’s a brief explanation of some key features:
+
+having_IP_Address: Whether the URL uses an IP address instead of a domain name.
+URL_Length: Length of the URL.
+Shortening_Service: Use of URL shortening services.
+having_At_Symbol: Presence of “@” symbol in the URL.
+double_slash_redirecting: Use of “//” in the URL path.
+Prefix_Suffix: Use of hyphens in the domain name.
+having_Sub_Domain: Number of subdomains.
+SSLfinal_State: SSL certificate status.
+Domain_registeration_length: Length of domain registration.
+Favicon: Consistency of the favicon with the domain.
+port: Use of non-standard ports.
+HTTPS_token: Presence of “HTTPS” token in the URL.
+Request_URL: Percentage of external URLs in the webpage.
+URL_of_Anchor: Percentage of external anchors.
+Links_in_tags: Links in meta, script, and link tags.
+SFH: Server Form Handler.
+Submitting_to_email: Forms submitting to email.
+Abnormal_URL: Abnormal URL features.
+Redirect: Number of redirects.
+on_mouseover: Changes on mouseover.
+RightClick: Right-click disabled.
+popUpWidnow: Presence of pop-up windows.
+Iframe: Use of iframes.
+age_of_domain: Age of the domain.
+DNSRecord: DNS record availability.
+web_traffic: Web traffic ranking.
+Page_Rank: Page rank.
+Google_Index: Indexed by Google.
+Links_pointing_to_page: Number of links pointing to the page.
+Statistical_report: Statistical report features.
+The Result column indicates whether the URL is classified as phishing (1) or not (-1).
+
+
+
+Sure! Let's take an example URL and analyze it using the features you provided.
+
+### Example URL: `http://example.com/login`
+
+1. **having_IP_Address**: -1 (The URL uses a domain name, not an IP address)
+2. **URL_Length**: 1 (The URL is relatively short)
+3. **Shortening_Service**: -1 (Not using a URL shortening service)
+4. **having_At_Symbol**: -1 (No "@" symbol in the URL)
+5. **double_slash_redirecting**: -1 (No "//" in the path)
+6. **Prefix_Suffix**: -1 (No hyphens in the domain name)
+7. **having_Sub_Domain**: 1 (No subdomains)
+8. **SSLfinal_State**: -1 (No SSL certificate, as it uses HTTP)
+9. **Domain_registeration_length**: 1 (Assume the domain is registered for a short period)
+10. **Favicon**: 1 (Favicon is consistent with the domain)
+11. **port**: -1 (Uses standard port 80 for HTTP)
+12. **HTTPS_token**: -1 (No "HTTPS" token in the URL)
+13. **Request_URL**: 1 (High percentage of external URLs)
+14. **URL_of_Anchor**: 1 (High percentage of external anchors)
+15. **Links_in_tags**: 1 (Links in meta, script, and link tags)
+16. **SFH**: -1 (Server Form Handler is consistent with the domain)
+17. **Submitting_to_email**: -1 (Forms do not submit to email)
+18. **Abnormal_URL**: -1 (No abnormal features)
+19. **Redirect**: 0 (No redirects)
+20. **on_mouseover**: -1 (No changes on mouseover)
+21. **RightClick**: -1 (Right-click is not disabled)
+22. **popUpWidnow**: -1 (No pop-up windows)
+23. **Iframe**: -1 (No iframes used)
+24. **age_of_domain**: 1 (Assume the domain is new)
+25. **DNSRecord**: 1 (DNS record is available)
+26. **web_traffic**: -1 (Low web traffic ranking)
+27. **Page_Rank**: -1 (Low page rank)
+28. **Google_Index**: 1 (Indexed by Google)
+29. **Links_pointing_to_page**: 1 (Few links pointing to the page)
+30. **Statistical_report**: 1 (Statistical report indicates potential phishing)
+
+### Result: 1 (Phishing)
+
+In this example, the URL `http://example.com/login` is classified as a phishing site based on the features analyzed. The presence of several indicators like a short domain registration length, high percentage of external URLs and anchors, and a new domain age contribute to this classification.
