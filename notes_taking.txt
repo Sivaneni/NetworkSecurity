@@ -1,0 +1,4 @@
+Yes, both BentoML and MLflow offer model registry capabilities, but they serve slightly different purposes:
+
+BentoML: Primarily focuses on building, packaging, and deploying machine learning models. It includes a model store for managing models, making it easier to serve and deploy them in production environments1.
+MLflow: Provides a comprehensive model registry that includes model versioning, lineage, and lifecycle management. It allows you to track experiments, register models, and manage their deployment stages (e.g., staging, production)2.
